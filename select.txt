@@ -1,0 +1,7 @@
+SELECT * FROM user u , teacher t ,student s 
+where 
+(u.email="teacher" and u.password="t")
+ANd ((u.role=2 and u.id=t.user_id)
+or (u.role=3 and u.id=s.user_id)
+or(u.role=1)
+or(u.role=0))
